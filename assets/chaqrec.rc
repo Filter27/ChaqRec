@@ -1,0 +1,33 @@
+#include <winver.h>
+#include "../src/resources.h"
+
+IDI_APP ICON "chaqrec.ico"
+IDI_RECORDING ICON "chaqrec-recording.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,3,0,0
+ PRODUCTVERSION 0,3,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "ChaqRec Contributors\0"
+            VALUE "FileDescription", "ChaqRec - Desktop Audio Visualizer and Optional Local Transcriber\0"
+            VALUE "FileVersion", "0.3.0.0\0"
+            VALUE "InternalName", "ChaqRec\0"
+            VALUE "OriginalFilename", "ChaqRec.exe\0"
+            VALUE "ProductName", "ChaqRec\0"
+            VALUE "ProductVersion", "0.3.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

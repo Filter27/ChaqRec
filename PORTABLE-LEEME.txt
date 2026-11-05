@@ -1,0 +1,22 @@
+ChaqRec v0.3.0 - WINDOWS 10/11 x64
+================================
+
+1. Extraiga este ZIP completo en una carpeta de Windows.
+2. Abra ChaqRec.exe (no requiere instalador ni runtime externo).
+3. Clic derecho en el icono de la bandeja para configurar las opciones.
+4. Grabe el microfono en M4A o WAV y seleccione la accion deseada:
+   solo grabar, solo transcribir, o grabar y transcribir.
+5. Para transcribir, conserve tools\whisper-cli.exe al lado de ChaqRec.exe.
+   El programa solicita permiso para descargar el modelo gratuito (~148 MB)
+   la primera vez que elija transcribir.
+6. La transcripcion se ejecuta DESPUES de detener la grabacion.
+   El TXT aparece en Documentos\ChaqRec\Recordings.
+
+IMPORTANTE: solo se GRABA el microfono. Audio del visualizador = Ambos
+no significa que el M4A incluya el sonido de Windows.
+
+Github: https://github.com/Filter27/ChaqRec
+Donar:  https://www.paypal.com/paypalme/Filter27
+
+Esta version necesita validacion de Windows y pruebas completas antes
+de considerarse estable. Fuente y licencias en el repositorio.
