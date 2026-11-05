@@ -277,7 +277,8 @@ bool ConvertTo16kWav(const std::wstring& audio, const std::wstring& wav,
         if (SUCCEEDED(hr)) hr = reader->SetStreamSelection(MF_SOURCE_READER_FIRST_AUDIO_STREAM, TRUE);
         DWORD outputRate = 0;
         if (SUCCEEDED(hr)) {
-            for (const DWORD rate : {kRate, 48000u, 44100u}) {
+            const DWORD rates[] = {static_cast<DWORD>(kRate), 48000u, 44100u};
+            for (const DWORD rate : rates) {
                 ComRef<IMFMediaType> type;
                 if (FAILED(MFCreateMediaType(type.out()))) break;
                 type->SetGUID(MF_MT_MAJOR_TYPE, MFMediaType_Audio);
